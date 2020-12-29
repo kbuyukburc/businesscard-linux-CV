@@ -1,0 +1,14 @@
+config BR2_PACKAGE_PYTHON_NUMPYV1_8
+	bool "python-numpyV1_8"
+	# Numpy has some CPU specific code
+	
+	# numpy needs fenv.h. Available for all architectures in
+	# glibc, but only for x86 and x86-64 in uClibc.
+	help
+	  NumPy is the fundamental package for scientific computing
+	  with Python.
+
+	  Note that NumPy needs fenv.h fully supported by the
+	  C library.
+
+	  http://www.numpy.org/

@@ -1,0 +1,14 @@
+config BR2_PACKAGE_BUSINESSCARD_SYNCDRIVE
+	bool "businesscard-syncdrive"
+	select BR2_PACKAGE_HOST_GENIMAGE
+	select BR2_PACKAGE_HOST_DOSFSTOOLS
+	select BR2_PACKAGE_DOSFSTOOLS_MKFS_FAT
+	select BR2_PACKAGE_HOST_MTOOLS
+	help
+	  The "USB drive" image that appears when you plug my business card into
+	  a PC.This flash drive is not read-only, you upload image from your PC 
+	  and mount it to your file system.It will be mounted '/mnt'. If OpenCV 
+	  package installed, you can do image processing on syncdrive folder.
+
+	  https://github.com/kbuyukburc
+
